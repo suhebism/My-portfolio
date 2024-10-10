@@ -1,14 +1,24 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
+import { motion } from "framer-motion"
+
+const menu = [
+  {name: 'Home', path:'/'},
+  {name: 'Projects', path:'/projects'},
+  {name: 'About', path:'/about'},
+  {name: 'Contact', path:'/contact'},
+]
 const Navbar = () => {
   return (
-    <div className='w-full h-12 px-10 bg-white flex items-center justify-between'>
-      <Link href='/' className='text-black'>Home</Link>
+    <div className='flex px-10 justify-between items-center w-full h-10 fixed  backdrop-filter backdrop-blur-sm bg-opacity-10 z-50'>
+      <Link href='/' className='text-[#80E7C3] text-lg'>Suheb Ahmed</Link>
       <div className='flex gap-10'>
-        <Link href='projects' className='text-black'>Project</Link>
-        <Link href='about' className='text-black'>About</Link>
-        <Link href='blog' className='text-black'>Blog</Link>
-        <Link href='contact' className='text-black'>Contact</Link>
+        {menu.map((item, index)=>(
+            <Link href={item.path} >
+              <div className='text-[#FAE9D0] hover:underline underline-offset-2 transition-all duration-500 ease-in-out'>{item.name}</div>
+            </Link>
+        ))}
       </div>
     </div>
   )
