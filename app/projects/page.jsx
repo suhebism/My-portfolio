@@ -20,6 +20,7 @@ const page = () => {
           title="ChargeSpot"
           desc="EV Vehicle"
           projectDetail=" Streamlining EV Charging with User-Centered Design"
+          url='https://chargespot.app/'
         />
         <ProjectCard
           img={chargespot}
@@ -27,6 +28,7 @@ const page = () => {
           title="Centarius.app"
           desc="Gaming platform"
           projectDetail="Redefining Gaming with Seamless Contests & Rewards"
+          url='https://www.centarius.app/'
         />
       </div>
       <div className="flex gap-5 items-center justify-center">
@@ -36,6 +38,7 @@ const page = () => {
           title="Homeshiksha"
           desc="Online Tutoring"
           projectDetail="Designing a Seamless Tutor-Student Platform"
+          url='https://student.homeshiksha.com/need-a-tutor'
         />
         <ProjectCard
           img={chargespot}
@@ -43,6 +46,7 @@ const page = () => {
           title="Quiz App"
           desc="UPSC Quiz App"
           projectDetail="UPSC Preparation:Quiz App for Focused Learning"
+          url='https://quiz-app-alpha-sand.vercel.app/'
         />
       </div>
       <p className='text-3xl font-black text-[#FAE9D0] text-center'>Plenty left untold</p>
