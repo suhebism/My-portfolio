@@ -14,7 +14,7 @@ const ProjectCard = ({ img,title, desc,projectDetail,img2,url }) => {
       <Image className="w-[250px] h-[250px] rounded-3xl" src={img} />
       <div className=" flex flex-col gap-2">
         <div>
-          <h1 className="text-3xl font-black text-[#FAE9D0]">{title}</h1>
+          <h1 className="text-2xl font-black text-[#FAE9D0]">{title}</h1>
           <p className="text-sm  text-[#FAE9D0]">{desc}</p>
         </div>
         <div>
