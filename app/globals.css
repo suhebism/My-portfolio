@@ -9,6 +9,7 @@ html, body {
 }
 body {
   font-family: "Nunito", sans-serif;
+  user-select: none;
 }
 
 @layer utilities {
