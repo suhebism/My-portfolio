@@ -16,7 +16,7 @@ const HomeBanner = () => {
           <h1 className="text-7xl font-black text-[#FAE9D0]">
             Hello!
           </h1>
-          <p className="text-[#FAE9D0] w-1/2 text-center text-xs">
+          <p className="text-[#FAE9D0] p-5 w-full sm:w-1/2 text-center text-xs">
             {" "}
             I'm <span className="font-black">Suheb Ahmed</span>- a product
             designer and front end developer who thrives on turning the ordinary
@@ -27,11 +27,11 @@ const HomeBanner = () => {
             something remarkable together.
           </p>
         </div>
-        <div className='flex gap-10'>
-            <Image className='w-28 h-28 rotate-6 floating-on-hover' src={tomato} />
-            <Image className='w-28 h-28 -rotate-12 floating-on-hover' src={drink} /> 
-            <Image className='w-28 h-28 floating-on-hover' src={donut} /> 
-            <Image className='w-28 h-28 rotate-6 floating-on-hover' src={burger} /> 
+        <div className='flex gap-3 sm:gap-10'>
+            <Image className='w-16 h-16 sm:w-28 sm:h-28 rotate-6 floating-on-hover' src={tomato} />
+            <Image className='w-16 h-16 sm:w-28 sm:h-28 -rotate-12 floating-on-hover' src={drink} /> 
+            <Image className='w-16 h-16 sm:w-28 sm:h-28 floating-on-hover' src={donut} /> 
+            <Image className='w-16 h-16 sm:w-28 sm:h-28 rotate-6 floating-on-hover' src={burger} /> 
             
         </div>
         <div className='flex gap-4'>

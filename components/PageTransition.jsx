@@ -1,11 +1,11 @@
-// components/PageTransition.js
+
 'use client'
 import { motion } from "framer-motion";
 
 const pageTransitionVariants = {
-  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly moved down
-  visible: { opacity: 1, y: 0 },  // Fully visible and in place
-  exit: { opacity: 0, y: -20 },    // Exit by fading out and moving up
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },   
 };
 
 const PageTransition = ({ children }) => {
@@ -15,7 +15,7 @@ const PageTransition = ({ children }) => {
       animate="visible"
       exit="exit"
       variants={pageTransitionVariants}
-      transition={{ duration: 0.5 }} // Animation duration
+      transition={{ duration: 0.5 }} 
     >
       {children}
     </motion.div>

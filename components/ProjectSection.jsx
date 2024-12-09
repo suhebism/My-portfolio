@@ -13,7 +13,7 @@ import pastry from '@/public/cream-pastry.png'
 const ProjectSection = () => {
   return (
     <div className="px-10 flex flex-col gap-5">
-      <div className="flex gap-5 items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
         <ProjectCard
           img={chargespot}
           img2={cookie}
@@ -31,7 +31,7 @@ const ProjectSection = () => {
           url='https://www.centarius.app/'
         />
       </div>
-      <div className="flex gap-5 items-center justify-center">
+      <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
         <ProjectCard
           img={homeshiksha}
           img2={pizza}
